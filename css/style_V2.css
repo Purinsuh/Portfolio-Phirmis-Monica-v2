@@ -347,7 +347,7 @@ body {
 .image-group {
 	display: flex;
 	gap: 15px; /* Espace entre les images du groupe */
-	flex-wrap: wrap; /* Pour que ça s'adapte à l'écran si trop long */
+	flex-wrap: wrap; /* Pour que Ã§a s'adapte Ã  l'Ã©cran si trop long */
 	justify-content: left;
 }
 
