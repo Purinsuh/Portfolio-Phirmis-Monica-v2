@@ -3,126 +3,65 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Illustrations</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Projets Personnels - Portfolio Phirmis Monica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <header>
-    <div class="container-fluid yellow">
-      <div class="row">
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">Phirmis Monica</a>
         <nav class="nav">
-          <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-          <a class="nav-link" href="bande_demo.html">Bande démo</a>
-          <a class="nav-link" href="page_universitaire.html">Projets universitaires</a>
-          <a class="nav-link disabled" href="page_personnelsV2.html">Projets personnels</a>
-          <a class="nav-link" href="page_contact.html">Contact</a>
-          <a class="nav-link" href="page_cv.html">A propos de moi</a>
+          <a href="index.html">Accueil</a>
+          <a href="bande_demo.html">Bande démo</a>
+          <a href="page_universitaire.html">Projets universitaires</a>
+          <a href="page_personnelsV2.html" class="active" aria-current="page">Projets personnels</a>
+          <a href="page_contact.html">Contact</a>
+          <a href="page_cv.html">À propos de moi</a>
         </nav>
       </div>
-    </div>
     </header>
 
-    <section>
-        <div class="container-fluid block_fiche">
-            <div class="container">
-                <div class="row">
-                    <article class="col-lg-12">
-                        <p class="text_fiche">
-                            <strong class="strong_contact">Twitter :</strong> <a href="https://x.com/purinsu_ruh?s=21&t=BokDYwpo7ZSYW8nbbRsJTA" target="_blank" rel="noopener noreferrer">Ici</a> <br>
-                            <strong class="strong_contact">ArtStation :</strong> <a href="https://www.artstation.com/purinsu" target="_blank" rel="noopener noreferrer"> Ici</a><br>
-
-                        </p>
-                        <div class="image-group">
-                            <!-- L'image visible -->
-                            <img src="images/obj_donuts.png" alt="Donut" onclick="openGallery(['images/obj_donuts.jpg', 'images/obj_donut_msh.jpg', 'images/obj_donut_wireframe.jpg'])">
-                        </div>
-
-                        <!-- Lightbox cachée -->
-                        <div id="lightbox" class="lightbox" onclick="closeGallery()">
-                            <button class="prev" onclick="prevImage(event)">←</button>
-                            <img id="lightbox-img" src="">
-                            <button class="next" onclick="nextImage(event)">→</button>
-                        </div>
-                        <!-- Lightbox cachée -->
-                        <div id="lightbox" class="lightbox" onclick="closeGallery()">
-                            <button class="prev" onclick="prevImage(event)">←</button>
-                            <img id="lightbox-img" src="">
-                            <button class="next" onclick="nextImage(event)">→</button>
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                    </article>
-                </div>
-            </div>
-        </div>
+    <section class="hero compact">
+      <div class="wrap">
+        <h1>Projets personnels</h1>
+        <p class="lead">Illustrations et créations réalisées en dehors du cadre universitaire.</p>
+      </div>
     </section>
 
-    <footer>
-      <div class="container-fluid gris">
-        <div class="container">
-          <div class="row">
-            <!-- col-md-12 = 12 colonnes et 1 =1  -->
-          <article class="col-lg-4">
-            <h1 class="footer-text">Social</h1>
-            <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </article>
-          <article class="col-lg-4">
-            <h1 class="footer-text">Contact</h1>
-            <p class="text2">mph.phirmis@gmail.com</p>
-          </article>
-          <article class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <p id="copyright">Copyright * 2022 Phirmis Monica</p>
-          </article>
-        </div>
+    <section class="section">
+      <div class="wrap article">
+        <p>
+          <strong>Twitter :</strong> <a href="https://x.com/purinsu_ruh?s=21&t=BokDYwpo7ZSYW8nbbRsJTA" target="_blank" rel="noopener noreferrer">Ici</a><br>
+          <strong>ArtStation :</strong> <a href="https://www.artstation.com/purinsu" target="_blank" rel="noopener noreferrer">Ici</a>
+        </p>
+
+        <p><strong>Modélisation d'un donut :</strong></p>
+        <div class="gallery">
+          <img src="images/obj_donuts.png" alt="Rendu final du donut modélisé" data-lightbox="donut">
+          <img src="images/obj_donut_msh.jpg" alt="Maillage (mesh) du donut modélisé" data-lightbox="donut">
+          <img src="images/obj_donut_wireframe.jpg" alt="Vue filaire (wireframe) du donut modélisé" data-lightbox="donut">
         </div>
       </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>
+          <h4>Social</h4>
+          <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:mph.phirmis@gmail.com">mph.phirmis@gmail.com</a>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2022–2025 Phirmis Monica</p>
     </footer>
-    <script>
-        let currentGroup = [];
-        let currentIndex = 0;
 
-        function openGallery(images) {
-        currentGroup = images;
-        currentIndex = 0;
-        document.getElementById('lightbox').style.display = 'flex';
-        updateImage();
-        }
-
-        function updateImage() {
-        document.getElementById('lightbox-img').src = currentGroup[currentIndex];
-        }
-
-        function closeGallery() {
-        document.getElementById('lightbox').style.display = 'none';
-        }
-
-        function prevImage(e) {
-        e.stopPropagation();
-        currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
-        updateImage();
-        }
-
-        function nextImage(e) {
-        e.stopPropagation();
-        currentIndex = (currentIndex + 1) % currentGroup.length;
-        updateImage();
-        }
-    </script>
-        </body>
-        </html>
+    <script src="js/lightbox.js"></script>
+  </body>
+</html>

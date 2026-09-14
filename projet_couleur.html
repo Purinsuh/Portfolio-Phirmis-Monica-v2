@@ -3,147 +3,108 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projet Mise en couleur</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Du noir et blanc à la couleur - Portfolio Phirmis Monica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <header>
-      <div class="container-fluid yellow">
-        <div class="row">
-          <nav class="nav">
-            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
-            <a class="nav-link" href="bande_demo.html">Bande démo</a>
-            <a class="nav-link" href="page_universitaire.html">Projets universitaires</a>
-            <a class="nav-link" href="page_personnelsV2.html">Projets personnels</a>
-            <a class="nav-link" href="page_contact.html">Contact</a>
-            <a class="nav-link" href="page_cv.html">A propos de moi</a>
-          </nav>
-        </div>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">Phirmis Monica</a>
+        <nav class="nav">
+          <a href="index.html">Accueil</a>
+          <a href="bande_demo.html">Bande démo</a>
+          <a href="page_universitaire.html">Projets universitaires</a>
+          <a href="page_personnelsV2.html">Projets personnels</a>
+          <a href="page_contact.html">Contact</a>
+          <a href="page_cv.html">À propos de moi</a>
+        </nav>
       </div>
     </header>
 
-    <section>
-      <div class="container-fluid ac1_illu1_de1">
-        <div class="container">
-          <div class="row">
-            <article class="col-lg-12">
-              <div class="illu_heading">
-                <h1 class="heading1">Du noir et blanc à la couleur</h1>
-                <p class="text1"> -Une façon d'utiliser Photoshop</p>
-              </div>
-            </article>
-          </div>
+    <section class="hero compact">
+      <div class="wrap">
+        <h1>Du noir et blanc à la couleur</h1>
+        <p class="lead">Une façon d'utiliser Photoshop</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap article">
+        <a class="back-link" href="page_universitaire.html">← Projets universitaires</a>
+
+        <dl class="meta">
+          <div><dt>Formation</dt><dd>Licence Études Visuelles, Média et Arts Numérique 2019</dd></div>
+          <div><dt>Date</dt><dd>2019 – 2020</dd></div>
+          <div><dt>Durée</dt><dd>1 mois</dd></div>
+          <div><dt>Logiciels</dt><dd>Photoshop</dd></div>
+          <div><dt>Support</dt><dd>PC</dd></div>
+        </dl>
+
+        <p><strong>L'image de base :</strong></p>
+        <div class="inline-figure">
+          <img src="images/Nadar _Sarah_Bernhardt_1864.jpg" alt="Photographie originale en noir et blanc de Sarah Bernhardt par Nadar, 1864" data-lightbox="couleur">
+        </div>
+
+        <p>
+          Dans le cadre du cours de design numérique, nous nous sommes intéressés aux photographies monochromes ainsi
+          qu'à la photographie en général. C'est un cours qui a été associé à la pratique de la photographie au sein
+          de l'Université Gustave Eiffel. Il nous a été possible de retoucher les photos prises dans le cadre du cours
+          de design numérique.
+        </p>
+        <p>Pour ce projet, la mission a été de mettre en pratique les techniques de recoloration.</p>
+
+        <p><strong>Première méthode :</strong> afin de parvenir à redonner de la couleur à une photographie, il est
+          possible de passer par quatre méthodes différentes. Ici, la première dont l'idée est d'appliquer des couleurs
+          sur différentes parties de l'image à l'aide de calques de réglage nommés « Courbes ». On peut constater le
+          résultat ci-dessous.</p>
+        <div class="inline-figure">
+          <img src="images/methode_1.jpg" alt="Portrait colorisé avec des calques de réglage Courbes, teintes brun-rouge sur le châle" data-lightbox="couleur">
+        </div>
+
+        <p><strong>Deuxième méthode :</strong> la deuxième méthode consiste à coloriser à l'aide de calques de
+          remplissage où la recherche s'est concentrée sur la bonne couleur pour les tons chair. Ici, le mode de
+          fusion le plus adapté a été l'incrustation, beaucoup plus subtil.</p>
+        <div class="inline-figure">
+          <img src="images/methode_2.jpg" alt="Portrait colorisé avec des calques de remplissage en mode incrustation, tons chair subtils" data-lightbox="couleur">
+        </div>
+
+        <p><strong>Troisième méthode :</strong> la troisième technique est l'utilisation de courbes de transfert de
+          dégradés. C'est une technique utilisée par le photographe Sean Tucker. On peut d'ailleurs retrouver une
+          vidéo montrant cette technique <a href="https://www.youtube.com/watch?v=xdaELrYQMPk" target="_blank">ici</a>.</p>
+        <div class="inline-figure">
+          <img src="images/methode_3.jpg" alt="Portrait colorisé avec des courbes de transfert de dégradés, teintes sépia chaudes" data-lightbox="couleur">
+        </div>
+
+        <p><strong>Quatrième méthode :</strong> pour cette technique, c'est l'utilisation de l'intelligence artificielle
+          qui est à l'honneur. Une agence gouvernementale de Singapour, GovTech, a mis à disposition des internautes un
+          outil de conversion d'images noir et blanc en couleur, fonctionnant selon le principe du « deep learning »
+          pour coloriser des photographies anciennes noir et blanc de Singapour. Le but de cet outil est de générer une
+          image avec des couleurs plausibles, sans pour autant garantir une représentation fidèle de la scène
+          photographiée à l'époque.</p>
+        <div class="inline-figure">
+          <img src="images/methode_4.jpg" alt="Portrait colorisé automatiquement par intelligence artificielle (outil GovTech Singapour)" data-lightbox="couleur">
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container-fluid block_fiche">
-        <div class="container">
-          <div class="row">
-            <article class="col-lg-12">
-              <p class="text_fiche">
-              <strong class="strong_contact">Formation :</strong> Licence Etudes Visuelles, Média et Arts Numérique 2019 <br>
-              <strong class="strong_contact">Date :</strong> 2019-2020 <br>
-              <strong class="strong_contact">Durée :</strong> 1 mois <br>
-              <strong class="strong_contact">Logiciels utilisés :</strong> Photoshop <br>
-              <strong class="strong_contact">Support :</strong> PC
-              </p>
-
-              <p class="text_fiche"><strong class="strong_contact">L'image de base :</strong>
-              </p>
-
-              <div class="img_projet">
-                <img src="images/Nadar _Sarah_Bernhardt_1864.jpg" alt="Photographie originale en noir et blanc de Sarah Bernhardt par Nadar, 1864" style="width:55%">
-              </div>
-
-              <p class="text_fiche">
-                <strong class="strong_contact">Détails du projet :</strong><br>
-                Dans le cadre du cours de design numérique, nous nous sommes intéresé aux
-                photographies monochrome ainsi qu'à la photographie en général. C'est un cours qui à
-                été associer à la pratique de la photographie au sein de l'Université Gustave Eiffel.
-                Il nous a été possible ainsi de retoucher les photos prises dans le cadre du cours
-                dans celui de design numérique.
-              </p>
-
-              <p class="text_fiche">Pour ce projet, la mission à été de mettre en pratique les techniques de recoloration.</p>
-
-              <p class="text_fiche">
-                <strong class="strong_contact">Première méthode :</strong><br>
-                Afin de parvenir à redonner de la couleur à une photographie, il est possible de
-	              passer par quatre méthodes différentes. Ici nous allons voir la première
-	              dont l'idée est d'appliquer des couleurs sur différentes parties de l'image à l'aide
-	              de calques de réglages nommée "Courbes". On peut constater le résultat ci-dessous.</p>
-
-                <div class="img_projet">
-                  <img src="images/methode_1.jpg" alt="Portrait colorisé avec des calques de réglage Courbes, teintes brun-rouge sur le châle" style="width:55%">
-                </div>
-
-              <p class="text_fiche">
-                <strong class="strong_contact">Deuxième méthode :</strong><br>
-                Pour la deuxième méthode à été de coloriser à l'aide de calques de remplissage où la
-	              recherche s'est accentué sur la bonne couleur pour les tons chairs. Ici le mode de
-	              fusion le plus adapté à été l'incrustation et beaucoup plus subtil.</p>
-
-                <div class="img_projet">
-                  <img src="images/methode_2.jpg" alt="Portrait colorisé avec des calques de remplissage en mode incrustation, tons chair subtils" style="width:55%">
-                </div>
-
-              <p class="text_fiche">
-                <strong class="strong_contact">Troisième méthode :</strong><br>
-                La troisième technique est l'utilisation de courbes de transferts de dégradés. C'est
-	              une technique utilisé par le photographe Sean Tucker. On peut d'ailleurs retrouver
-	              une vidéo montrant cette technique :<a href="https://www.youtube.com/watch?v=xdaELrYQMPk">ici</a>
-                </p>
-
-                <div class="img_projet">
-                  <img src="images/methode_3.jpg" alt="Portrait colorisé avec des courbes de transfert de dégradés, teintes sépia chaudes" style="width:55%">
-                </div>
-
-              <p class="text_fiche">
-                <strong class="strong_contact">Quatrième méthode :</strong><br>
-                Pour cette technique, c'est l'utilisation de l'intelligence articielle qui est à
-	              l'honneur. Une agence gouvernementale de Singapour, Govtech a mis à disposition des
-	              internautes un outil de conversion d'images noir et blanc en couleur. Le but étant de
-	              développer un outil de colorisation fonctionnant selon le principe du "deep learning"
-	              pour coloriser des photographies anciennes noir et blanc de Singapour. Le but de cet
-	              outil est de générer une image avec des couleurs qui sont plausibles, néanmoins ça ne
-	              garantit pas une représentation fidèle de la scène photographiée à l'époque.</p>
-
-                <div class="img_projet">
-                  <img src="images/methode_4.jpg" alt="Portrait colorisé automatiquement par intelligence artificielle (outil GovTech Singapour)" style="width:55%">
-                </div>
-            </article>
-          </div>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>
+          <h4>Social</h4>
+          <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:mph.phirmis@gmail.com">mph.phirmis@gmail.com</a>
         </div>
       </div>
-    </section>
-
-    <footer>
-      <div class="container-fluid gris">
-        <div class="container">
-          <div class="row">
-            <!-- col-md-12 = 12 colonnes et 1 =1  -->
-          <article class="col-lg-4">
-            <h1 class="footer-text">Social</h1>
-            <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </article>
-          <article class="col-lg-4">
-            <h1 class="footer-text">Contact</h1>
-            <p class="text2">mph.phirmis@gmail.com</p>
-          </article>
-          <article class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <p id="copyright">Copyright * 2022 Phirmis Monica</p>
-          </article>
-        </div>
-        </div>
-      </div>
+      <p class="footer-bottom">© 2022–2025 Phirmis Monica</p>
     </footer>
 
+    <script src="js/lightbox.js"></script>
   </body>
 </html>

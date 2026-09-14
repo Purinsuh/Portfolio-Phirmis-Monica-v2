@@ -3,122 +3,86 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projet Kodama VR</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <title>Kodama VR - Portfolio Phirmis Monica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <header>
-      <div class="container-fluid yellow">
-        <div class="row">
-          <nav class="nav">
-            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
-            <a class="nav-link" href="bande_demo.html">Bande démo</a>
-            <a class="nav-link" href="page_universitaire.html">Projets universitaires</a>
-            <a class="nav-link" href="page_personnelsV2.html">Projets personnels</a>
-            <a class="nav-link" href="page_contact.html">Contact</a>
-            <a class="nav-link" href="page_cv.html">A propos de moi</a>
-          </nav>
-        </div>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">Phirmis Monica</a>
+        <nav class="nav">
+          <a href="index.html">Accueil</a>
+          <a href="bande_demo.html">Bande démo</a>
+          <a href="page_universitaire.html">Projets universitaires</a>
+          <a href="page_personnelsV2.html">Projets personnels</a>
+          <a href="page_contact.html">Contact</a>
+          <a href="page_cv.html">À propos de moi</a>
+        </nav>
       </div>
     </header>
 
-    <section>
-      <div class="container-fluid ac1_illu1_de1">
-        <div class="container">
-          <div class="row">
-            <article class="col-lg-12">
-              <div class="illu_heading">
-                <h1 class="heading1">Projet Kodama</h1>
-                <p class="text1"> -Thème libre</p>
-              </div>
-            </article>
-          </div>
+    <section class="hero compact">
+      <div class="wrap">
+        <h1>Kodama</h1>
+        <p class="lead">Thème libre</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap article">
+        <a class="back-link" href="page_universitaire.html">← Projets universitaires</a>
+
+        <dl class="meta">
+          <div><dt>Formation</dt><dd>Master Arts Numériques et Cultures Visuelles 2021-2022</dd></div>
+          <div><dt>Date</dt><dd>2022</dd></div>
+          <div><dt>Durée</dt><dd>2 semaines</dd></div>
+          <div><dt>Logiciels</dt><dd>Unity</dd></div>
+          <div><dt>Support</dt><dd>Jeu Android / iOS</dd></div>
+        </dl>
+
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/LVhYCHoT7xg" title="Kodama VR" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <p>
+          C'est un projet de groupe réalisé dans le cadre du cours de réalité virtuelle. Le choix du thème était libre.
+          Kodama est un jeu d'aventure en réalité virtuelle. Le joueur y contrôle Kodama, un esprit espiègle de la forêt
+          dans laquelle se déroule l'histoire.
+        </p>
+        <p>
+          À travers ce jeu, le joueur va se téléporter et interagir avec des objets qui l'entourent afin de retracer
+          l'histoire du chaperon rouge, une fille à la sensibilité exacerbée.
+        </p>
+
+        <p><a href="https://drive.google.com/drive/folders/1h-FOqfU7yCfwpKaYjiGd1SV36qFyB8w8?usp=sharing" target="_blank">Dossier démo →</a></p>
+
+        <h2>Images</h2>
+        <div class="gallery">
+          <img src="images/kodama2.png" alt="Vue extérieure du chalet en réalité virtuelle au crépuscule" data-lightbox="gallery">
+          <img src="images/kodama3.png" alt="Le chalet éclairé de nuit, cheminée fumante dans une clairière" data-lightbox="gallery">
+          <img src="images/kodama4.png" alt="Intérieur du chalet avec table à manger et cheminée allumée" data-lightbox="gallery">
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container-fluid block_fiche">
-        <div class="container">
-          <div class="row">
-            <article class="col-lg-12">
-              <p class="text_fiche">
-              <strong class="strong_contact">Formation :</strong> Master Arts Numériques et Cultures Visuelles 2021-2022 <br>
-              <strong class="strong_contact">Date :</strong> 2022 <br>
-              <strong class="strong_contact">Durée :</strong> 2 semaines <br>
-              <strong class="strong_contact">Logiciels utilisés :</strong> Unity <br>
-              <strong class="strong_contact">Support :</strong> Jeu Android / IOS
-              </p>
-
-              <p class="text_fiche"><strong class="strong_contact">Vidéo :</strong>
-              </p>
-
-              <div class="video-responsive">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/LVhYCHoT7xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-
-              <p class="text_fiche">
-                <strong class="strong_contact">Détails du projet :</strong><br>
-                C'est un projet de groupe réalisé dans le cadre du cours de réalité virtuelle. Le choix du thème était libre. <br>
-                Kodama est un jeu d’aventure en réalité virtuelle. Le joueur y contrôle Kodama, un esprit espiègle de la forêt dans laquelle se déroule l’histoire.<br>
-                A travers ce jeu, le joueur va se téléporter et interagir avec des objets qui l'entourent afin de retracer <br>
-                l’histoire du chaperon rouge, une fille à la sensibilité exacerbée.<br>
-
-
-              </p>
-
-
-              <p class="text_fiche"><strong class="strong_contact">Dossier démo :</strong> <a href="https://drive.google.com/drive/folders/1h-FOqfU7yCfwpKaYjiGd1SV36qFyB8w8?usp=sharing" target="_blank">à découvrir ici !</a>
-              </p>
-
-              <p class="text_fiche">
-                <strong class="strong_contact">Images :</strong>
-              </p>
-
-              <div class="galerie">
-                <div class="img_projet">
-                  <img src="images/kodama2.png" alt="Vue extérieure du chalet en réalité virtuelle au crépuscule" style="width:75%">
-                </div>
-                <div class="img_projet">
-                  <img src="images/kodama3.png" alt="Le chalet éclairé de nuit, cheminée fumante dans une clairière" style="width:75%">
-                </div>
-                <div class="img_projet">
-                  <img src="images/kodama4.png" alt="Intérieur du chalet avec table à manger et cheminée allumée" style="width:75%">
-                </div>
-
-              </div>
-
-            </article>
-          </div>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>
+          <h4>Social</h4>
+          <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:mph.phirmis@gmail.com">mph.phirmis@gmail.com</a>
         </div>
       </div>
-    </section>
-
-    <footer>
-      <div class="container-fluid gris">
-        <div class="container">
-          <div class="row">
-            <!-- col-md-12 = 12 colonnes et 1 =1  -->
-          <article class="col-lg-4">
-            <h1 class="footer-text">Social</h1>
-            <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </article>
-          <article class="col-lg-4">
-            <h1 class="footer-text">Contact</h1>
-            <p class="text2">mph.phirmis@gmail.com</p>
-          </article>
-          <article class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <p id="copyright">Copyright * 2022 Phirmis Monica</p>
-          </article>
-        </div>
-        </div>
-      </div>
+      <p class="footer-bottom">© 2022–2025 Phirmis Monica</p>
     </footer>
 
+    <script src="js/lightbox.js"></script>
   </body>
 </html>

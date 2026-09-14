@@ -4,112 +4,67 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Phirmis Monica</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
-
   <body>
 
-    <header>
-      <div class="container-fluid yellow">
-        <div class="row">
-          <nav class="nav">
-            <a class="nav-link disabled" aria-current="page" href="#">Accueil</a>
-            <a class="nav-link" href="bande_demo.html">Bande démo</a>
-            <a class="nav-link" href="page_universitaire.html">Projets universitaires</a>
-            <a class="nav-link" href="page_personnelsV2.html">Projets personnels</a>
-            <a class="nav-link" href="page_contact.html">Contact</a>
-            <a class="nav-link" href="page_cv.html">A propos de moi</a>
-          </nav>
-        </div>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">Phirmis Monica</a>
+        <nav class="nav">
+          <a href="index.html" class="active" aria-current="page">Accueil</a>
+          <a href="bande_demo.html">Bande démo</a>
+          <a href="page_universitaire.html">Projets universitaires</a>
+          <a href="page_personnelsV2.html">Projets personnels</a>
+          <a href="page_contact.html">Contact</a>
+          <a href="page_cv.html">À propos de moi</a>
+        </nav>
       </div>
     </header>
 
-    <section>
-      <div class="container-fluid ac1_illu1_de1">
-        <div class="container">
-          <div class="row">
-            <article class="col-lg-12">
-              <div class="heading-block">
-                <h1 class="heading1">Qui suis-je ?</h1>
-              </div>
-                <div class="text-block">
-                  <p class="text1">Je suis <strong class="strong_contact">Phirmis Monica</strong>, étudiante en deuxième année de Master d'Arts et Technologie de l'Image.</p>
-                </div>
-                <button class="btn btn-custom"> <a href="page_cv.html">En savoir plus</a></button>
-              </article>
-            </div>
-          </div>
-        </div>
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Portfolio</span>
+        <h1>Qui suis-je ?</h1>
+        <p class="lead">Je suis <strong>Phirmis Monica</strong>, étudiante en deuxième année de Master d'Arts et Technologie de l'Image.</p>
+        <a class="btn" href="page_cv.html">En savoir plus</a>
+      </div>
     </section>
 
-    <section class="test2">
-      <div class="container-fluid green">
-        <div class="container">
-          <div class="row">
-            <article class="col-lg-12">
-              <div class="heading-block">
-                <h1 class="heading2">Projets Universitaires</h1>
-              </div>
-              <div class="fond_img">
-                <a href="page_universitaire.html"><img src="images/panneau2.jpg" alt="Ardoise « Back to School », lien vers les projets universitaires" style="width:65%"></a>
-              </div>
-
-              <h1 class="heading2">Projets Personnels</h1>
-            </div>
-            <div class="fond_img">
-              <a href="page_personnelsV2.html"><img src="images/panneau3.jpg" alt="Carnet « Never Stop Dreaming », lien vers les projets personnels" style="width:65%"></a>
-            </div>
-            <div class="osef">
-              <p class="espace"></p>
-
-            </div>
-
-            </article>
-          </div>
+    <section class="section">
+      <div class="wrap">
+        <div class="feature-cards">
+          <a class="feature-card" href="page_universitaire.html">
+            <h3>Projets universitaires</h3>
+            <p>Jeux vidéo, environnements 3D et expérimentations réalisés au cours de mes études.</p>
+            <span class="arrow">Découvrir →</span>
+          </a>
+          <a class="feature-card" href="page_personnelsV2.html">
+            <h3>Projets personnels</h3>
+            <p>Illustrations et créations réalisées en dehors du cadre universitaire.</p>
+            <span class="arrow">Découvrir →</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div>
-              <div id="carre"><a class="carre"></a>
-
-              </div>
-
-            </div>
-
-          </div>
-
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>
+          <h4>Social</h4>
+          <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-
-      </div>
-    </section>
-
-    <footer>
-      <div class="container-fluid gris">
-        <div class="container">
-          <div class="row">
-            <!-- col-md-12 = 12 colonnes et 1 =1  -->
-          <article class="col-lg-4">
-            <h1 class="footer-text">Social</h1>
-            <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </article>
-          <article class="col-lg-4">
-            <h1 class="footer-text">Contact</h1>
-            <p class="text2">mph.phirmis@gmail.com</p>
-          </article>
-          <article class="col-lg-4">
-            <p id="copyright">Copyright * 2022 Phirmis Monica</p>
-          </article>
-        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:mph.phirmis@gmail.com">mph.phirmis@gmail.com</a>
         </div>
       </div>
+      <p class="footer-bottom">© 2022–2025 Phirmis Monica</p>
     </footer>
+
+    <script src="js/lightbox.js"></script>
   </body>
 </html>
