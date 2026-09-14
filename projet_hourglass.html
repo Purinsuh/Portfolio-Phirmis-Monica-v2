@@ -1,145 +1,94 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Projet Hourglass</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hourglass - Portfolio Phirmis Monica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <header>
-      <div class="container-fluid yellow">
-        <div class="row">
-          <nav class="nav">
-            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
-            <a class="nav-link" href="bande_demo.html">Bande démo</a>
-            <a class="nav-link" href="page_universitaire.html">Projets universitaires</a>
-            <a class="nav-link" href="page_personnelsV2.html">Projets personnels</a>
-            <a class="nav-link" href="page_contact.html">Contact</a>
-            <a class="nav-link" href="page_cv.html">A propos de moi</a>
-          </nav>
-        </div>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">Phirmis Monica</a>
+        <nav class="nav">
+          <a href="index.html">Accueil</a>
+          <a href="bande_demo.html">Bande démo</a>
+          <a href="page_universitaire.html">Projets universitaires</a>
+          <a href="page_personnelsV2.html">Projets personnels</a>
+          <a href="page_contact.html">Contact</a>
+          <a href="page_cv.html">À propos de moi</a>
+        </nav>
       </div>
     </header>
 
-    <section>
-      <div class="container-fluid ac1_illu1_de1">
-        <div class="container">
-          <div class="row">
-            <article class="col-lg-12">
-              <div class="illu_heading">
-                <h1 class="heading1">Projet Hourglass</h1>
-                <p class="text1"> -Thématique Espace-Temps (projet de groupe)</p>
-              </div>
-            </article>
-          </div>
+    <section class="hero compact">
+      <div class="wrap">
+        <h1>Hourglass</h1>
+        <p class="lead">Thématique espace-temps (projet de groupe)</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap article">
+        <a class="back-link" href="page_universitaire.html">← Projets universitaires</a>
+
+        <dl class="meta">
+          <div><dt>Formation</dt><dd>Licence Études Visuelles, Média et Arts Numérique 2020-2021</dd></div>
+          <div><dt>Date</dt><dd>2020 – 2021</dd></div>
+          <div><dt>Durée</dt><dd>8 mois</dd></div>
+          <div><dt>Logiciels</dt><dd>Unity · Maya · Photoshop</dd></div>
+          <div><dt>Support</dt><dd>Jeu PC</dd></div>
+        </dl>
+
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/M9NQFt-9-us" title="Hourglass" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <p>
+          Hourglass est un projet de groupe réalisé dans le cadre du cours de recherche et création numérique. Un
+          thème nous a été donné : l'espace-temps. Afin de respecter ce thème, mon groupe et moi avons décidé de
+          réaliser un jeu vidéo en associant œuvre d'art et énigme.
+        </p>
+        <p>
+          Dans ce projet, j'ai réalisé la texture du personnage principal ainsi que celle des bâtiments présents dans
+          l'un des niveaux du jeu. J'ai par la suite procédé à la réalisation de l'environnement d'un autre niveau du
+          jeu, ainsi qu'à l'ajustement de l'éclairage.
+        </p>
+
+        <p><a href="https://drive.google.com/drive/folders/1lH3QOrxBs4oUh5hWpsLoKYtKMDTu064F?usp=sharing" target="_blank">Dossier démo →</a></p>
+
+        <h2>Images</h2>
+        <div class="gallery">
+          <img src="images/personnage_hourglass.jpg" alt="Personnage 3D avec un masque triangulaire et un long manteau bleu" data-lightbox="gallery">
+          <img src="images/batiment1.jpg" alt="Modélisation 3D d'une tour fantastique surmontée de formes rouges et blanches" data-lightbox="gallery">
+          <img src="images/batiment2.jpg" alt="Modélisation 3D d'une tour bleue et rouge en forme de sablier avec des flèches" data-lightbox="gallery">
+          <img src="images/hourglass_salon1.jpg" alt="Salon moderne avec canapé, piano et escalier en colimaçon" data-lightbox="gallery">
+          <img src="images/hourglass_salon2.jpg" alt="Salon dans des tons rouges avec cheminée, rideaux et bibliothèque" data-lightbox="gallery">
+          <img src="images/hourglass_salon3.jpg" alt="Salle à manger éclairée par un lustre, avec bibliothèque et rideaux rouges" data-lightbox="gallery">
+          <img src="images/hourglass_ext1.jpg" alt="Chemin traversant une forêt stylisée aux arbres élancés" data-lightbox="gallery">
+          <img src="images/hourglass_ext2.jpg" alt="Clairière au coucher du soleil avec un personnage fantastique et une maison" data-lightbox="gallery">
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container-fluid block_fiche">
-        <div class="container">
-          <div class="row">
-            <article class="col-lg-12">
-              <p class="text_fiche">
-              <strong class="strong_contact">Formation :</strong> Licence Etudes Visuelles, Média et Arts Numérique 2020/2021 <br>
-              <strong class="strong_contact">Date :</strong> 2020-2021 <br>
-              <strong class="strong_contact">Durée :</strong> 8 mois <br>
-              <strong class="strong_contact">Logiciels utilisés :</strong> Unity - Maya - Photoshop <br>
-              <strong class="strong_contact">Support :</strong> Jeu PC
-              </p>
-
-              <p class="text_fiche"><strong class="strong_contact">Vidéo :</strong>
-              </p>
-
-              <div class="video-responsive">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/M9NQFt-9-us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-
-              <p class="text_fiche">
-                <strong class="strong_contact">Détails du projet :</strong><br>
-                Hourglass est un projet de groupe réalisé dans le cadre du cours de recherche et
-	              création numérique. Un thème nous a été donné et c'est l'espace-temps. Afin de
-	              respecter le thème donné, mon groupe et moi avons décidé de réaliser un jeu vidéo
-	              en associant oeuvre d'art et énigme. <br> Dans ce projet j'ai réaliser la texture du
-	              personnage principal ainsi que celle des bâtiments présent dans l'un des niveaux du
-	              jeu. J'ai par la suite procédé à la réalisation de l'environnement d'un autre niveau du jeu, ainsi qu'à l'ajustement de l'éclairage.
-              </p>
-
-              <p class="text_fiche"><strong class="strong_contact">Dossier démo :</strong> <a href="https://drive.google.com/drive/folders/1lH3QOrxBs4oUh5hWpsLoKYtKMDTu064F?usp=sharing" target="_blank">à découvrir ici !</a>
-              </p>
-
-              <p class="text_fiche">
-                <strong class="strong_contact">Images :</strong>
-              </p>
-
-              <div class="galerie">
-                <div class="img_projet">
-                  <img src="images/personnage_hourglass.jpg" alt="" style="width:75%">
-                </div> <br>
-                <div class="img_projet">
-                  <img src="images/batiment1.jpg" alt="" style="width:75%">
-                </div> <br>
-                <div class="img_projet">
-                  <img src="images/batiment2.jpg" alt="" style="width:75%">
-                </div>
-
-                <div class="img_projet">
-                  <img src="images/hourglass_salon1.jpg" alt="" style="width:75%">
-                </div>
-                <div class="img_projet">
-                  <img src="images/hourglass_salon2.jpg" alt="" style="width:75%">
-                </div>
-                <div class="img_projet">
-                  <img src="images/hourglass_salon3.jpg" alt="" style="width:75%">
-                </div>
-
-                <div class="img_projet">
-                  <img src="images/hourglass_ext1.jpg" alt="" style="width:75%">
-                </div>
-
-                <div class="img_projet">
-                  <img src="images/hourglass_ext2.jpg" alt="" style="width:75%">
-                </div>
-
-              </div>
-
-            </article>
-          </div>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>
+          <h4>Social</h4>
+          <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:mph.phirmis@gmail.com">mph.phirmis@gmail.com</a>
         </div>
       </div>
-    </section>
-
-    <footer>
-      <div class="container-fluid gris">
-        <div class="container">
-          <div class="row">
-            <!-- col-md-12 = 12 colonnes et 1 =1  -->
-          <article class="col-lg-4">
-            <h1 class="footer-text">Social</h1>
-            <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </article>
-          <article class="col-lg-4">
-            <h1 class="footer-text">Contact</h1>
-            <p class="text2">mph.phirmis@gmail.com</p>
-          </article>
-          <article class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-            <p id="copyright">Copyright * 2022 Phirmis Monica</p>
-          </article>
-        </div>
-        </div>
-      </div>
+      <p class="footer-bottom">© 2022–2025 Phirmis Monica</p>
     </footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+    <script src="js/lightbox.js"></script>
   </body>
 </html>

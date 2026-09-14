@@ -1,152 +1,127 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Page CV</title>
-
-    <!-- css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>À propos de moi - Portfolio Phirmis Monica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
 
-    <header>
-      <div class="container-fluid yellow">
-        <div class="row">
-          <nav class="nav">
-            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-            <a class="nav-link" href="bande_demo.html">Bande démo</a>
-            <a class="nav-link" href="page_universitaire.html">Projets universitaires</a>
-            <a class="nav-link" href="page_personnelsV2.html">Projets personnels</a>
-            <a class="nav-link" href="page_contact.html">Contact</a>
-            <a class="nav-link disabled" href="#">A propos de moi</a>
-          </nav>
-        </div>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="index.html">Phirmis Monica</a>
+        <nav class="nav">
+          <a href="index.html">Accueil</a>
+          <a href="bande_demo.html">Bande démo</a>
+          <a href="page_universitaire.html">Projets universitaires</a>
+          <a href="page_personnelsV2.html">Projets personnels</a>
+          <a href="page_contact.html">Contact</a>
+          <a href="page_cv.html" class="active" aria-current="page">À propos de moi</a>
+        </nav>
       </div>
     </header>
 
-    <section>
-      <div class="container-fluid cv1">
-        <div class="container">
-          <div class="row">
-              <article class="col-lg-12">
-                  <h1 class="heading1">A propos de moi</h1>
-                  <p class="text_cv1">
-                      Je suis <strong class="strong_contact">Phirmis Monica</strong> et j'ai actuellement 25 ans.
-                      Je suis étudiante en deuxième année de master <strong class="strong_contact">d'Arts et Technologies de l'Image</strong> à l'Université Paris 8.
-                  </p>
+    <section class="hero">
+      <div class="wrap">
+        <h1>À propos de moi</h1>
+        <p class="lead">
+          Je suis <strong>Phirmis Monica</strong> et j'ai actuellement 25 ans. Je suis étudiante en deuxième année
+          de master <strong>d'Arts et Technologies de l'Image</strong> à l'Université Paris 8.
+        </p>
+        <p class="lead">
+          Je suis passionnée par le design, les jeux vidéo et les nouvelles technologies.
+          J'aime dessiner et écrire des histoires à mes heures perdues.
+        </p>
+        <a class="btn" href="Phirmis_Monica_CV_COLO_V3.pdf" target="_blank">Mon CV au format PDF</a>
+      </div>
+    </section>
 
-                  <p class="text_cv1">
-                      Je suis passionnée par le design, les jeux vidéo et les nouvelles technologies.
-                      J'aime dessiner et écrire des histoires à mes heures perdus.
+    <section class="section section-alt">
+      <div class="wrap">
+        <h2 class="center">Mon parcours</h2>
+        <ul class="timeline">
+          <li><span class="year">2022 — 2025</span><h3>Master Arts et Technologies de l'Image (en cours)</h3></li>
+          <li><span class="year">2021 — 2022</span><h3>Master Arts Numériques et Cultures Visuelles</h3></li>
+          <li><span class="year">2018 — 2021</span><h3>Licence Études Visuelles, Média et Arts Numériques</h3></li>
+          <li><span class="year">2018</span><h3>Bac ES, Lycée Jardin d'Essai</h3></li>
+        </ul>
+      </div>
+    </section>
 
-                  </p>
-                  <p class="text_fiche">
-                      <h2 class="heading_cv_parcours"> Mon CV au format : <a href="https://purinsuh.github.io/Portfolio-Phirmis-Monica/Phirmis_Monica_CV_COLO_V3.pdf" target="_blank">pdf</a></h2> 
-                      
-                  </p>
-              </article>
-          </div>
+    <section class="section">
+      <div class="wrap">
+        <h2 class="center">Expérience professionnelle</h2>
+        <ul class="timeline">
+          <li>
+            <span class="year">2024</span>
+            <h3>Exposition « Recto VRso » à Laval</h3>
+            <p>Création d'une œuvre interactive avec Unreal Engine 5 et TouchDesigner. Projection d'une cascade et de poissons sur deux grandes portes où le public pouvait passer en dessous grâce à la capture de mouvement d'une Kinect.</p>
+          </li>
+          <li>
+            <span class="year">2021</span>
+            <h3>Stage — Société de remorquage Matima</h3>
+            <p>Création d'affiches et de flyers.</p>
+          </li>
+          <li>
+            <span class="year">2014</span>
+            <h3>Stage — Clinique vétérinaire</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <h2 class="center">Compétences</h2>
+
+        <h3>Langues</h3>
+        <div class="pill-group">
+          <span class="pill">Anglais (B1)</span>
+          <span class="pill">Allemand (A2)</span>
+        </div>
+
+        <h3>Logiciels</h3>
+        <div class="pill-group">
+          <span class="pill">Unity</span>
+          <span class="pill">Unreal Engine 5</span>
+          <span class="pill">Blender</span>
+          <span class="pill">Maya</span>
+          <span class="pill">MotionBuilder</span>
+          <span class="pill">Photoshop</span>
+          <span class="pill">Illustrator</span>
+          <span class="pill">Premiere Pro</span>
+          <span class="pill">After Effects</span>
+          <span class="pill">Substance 3D Painter</span>
+        </div>
+
+        <h3>Langages de programmation</h3>
+        <div class="pill-group">
+          <span class="pill">C#</span>
+          <span class="pill">Blueprint</span>
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container-fluid cv2">
-        <div class="container">
-          <div class="row">
-            <article class="col-lg-12">
-              <h1 class="heading1">Mon parcours</h1>
-              <h3 class="heading_cv_parcours">Année 2022-2025 - Master Arts et Technologies de L'image (en cours)</h3>
-              <!--<p class="text_cv2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-              <h3 class="heading_cv_parcours">Année 2021-2022 - Master Arts Numériques et Cultures Visuelles</h3>
-              <!--<p class="text_cv2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-              <h3 class="heading_cv_parcours">Année 2018-2021 - Licence Etudes Visuelles, Média et Arts Numériques</h3>
-              <!--<p class="text_cv2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-              <h3 class="heading_cv_parcours">Année 2018 - Bac ES Lycée Jardin d'Essai</h3>
-              <!--<p class="text_cv2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-
-            </article>
-          </div>
+    <footer class="site-footer">
+      <div class="wrap">
+        <div>
+          <h4>Social</h4>
+          <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:mph.phirmis@gmail.com">mph.phirmis@gmail.com</a>
         </div>
       </div>
-    </section>
-
-    <section>
-      <div class="container-fluid cv3">
-        <div class="container">
-          <div class="row">
-              <article class="col-lg-12">
-                  <h1 class="heading1">Expérience professionnel</h1>
-                  <h3 class="heading_cv_parcours">2024 - Exposition "Recto VRso" à Laval</h3>
-                  <p class="text_cv2"> Création d'une œuvre interactive avec Unreal Engine 5 et Touch Designer. Projection d'une cascade et de poissons sur deux grandes portes où le public à put passer en dessous grâce à la capture de mouvement de la Kinect.</p>
-                  <h3 class="heading_cv_parcours">Stage 2021 - Société de remorquage Matima</h3>
-                  <p class="text_cv2"> Création d'affiches et flyers</p>
-                  <!--<p class="text_cv2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-                  <h3 class="heading_cv_parcours">Stage 2014 - Clinique Vétérinaire</h3>
-                  <!--<p class="text_cv2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-
-              </article>
-
-
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <div class="container-fluid cv4">
-        <div class="container">
-          <div class="row">
-              <article class="col-lg-12">
-                  <h1 class="heading1">Compétences</h1>
-                  <h3 class="heading_cv_parcours">Langues</h3>
-                  <p class="text_cv2"> Anglais (B1)</p>
-                  <p class="text_cv2"> Allemand (A2)</p>
-                  <h3 class="heading_cv_parcours">Logiciels</h3>
-                  <p class="text_cv2"> Unity * Unreal Engine 5 * Blender * Maya * Motion Builder * Photoshop * Illustrator * Premiere Pro</p>
-                  <p class="text_cv2"> After Effect * Substance 3D Painter</p>
-                  <!--<p class="text_cv2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-                  <h3 class="heading_cv_parcours">Langages de programmation</h3>
-                  <p class="text_cv2"> C# * Blueprint * HTML * CSS</p>
-                  <!--<p class="text_cv2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-                  <h3 class="heading_cv_parcours"></h3>
-                  <!--<p class="text_cv2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>-->
-                  <!--<>embed src=https://purinsuh.github.io/Portfolio-Phirmis-Monica/Phirmis_Monica_CV_COLO_V3.pdf width=800 height=500 type='application/pdf' />-->
-              </article>
-
-
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <footer>
-      <div class="container-fluid gris">
-        <div class="container">
-          <div class="row">
-            <!-- col-md-12 = 12 colonnes et 1 =1  -->
-          <article class="col-lg-4">
-            <h1>Social</h1>
-            <a href="https://www.linkedin.com/in/monica-phirmis/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </article>
-          <article class="col-lg-4">
-            <h1>Contact</h1>
-            <p>mph.phirmis@gmail.com</p>
-          </article>
-          <article class="col-lg-4">
-            <p id="copyright">Copyright * 2022 Phirmis Monica</p>
-          </article>
-        </div>
-        </div>
-      </div>
+      <p class="footer-bottom">© 2022–2025 Phirmis Monica</p>
     </footer>
 
+    <script src="js/lightbox.js"></script>
   </body>
 </html>
