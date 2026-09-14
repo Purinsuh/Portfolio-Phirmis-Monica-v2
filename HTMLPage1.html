@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie interactive</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column; /* Les groupes vont s'empiler verticalement */
+            gap: 30px; /* Espace entre les groupes */
+            align-items: center; /* Centrage horizontal */
+        }
+
+            .gallery img {
+                width: 200px;
+                height: auto;
+                cursor: pointer;
+                border-radius: 8px;
+                transition: transform 0.2s;
+            }
+
+                .gallery img:hover {
+                    transform: scale(1.05);
+                }
+
+        /* Lightbox */
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            flex-direction: column;
+        }
+
+            #lightbox img {
+                max-width: 90%;
+                max-height: 90%;
+                border-radius: 8px;
+            }
+
+            #lightbox .close {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                font-size: 40px;
+                color: white;
+                cursor: pointer;
+            }
+
+            #lightbox .nav {
+                position: absolute;
+                top: 50%;
+                font-size: 48px;
+                color: white;
+                cursor: pointer;
+                user-select: none;
+                padding: 10px;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.3);
+                border-radius: 50%;
+            }
+
+            #lightbox .left {
+                left: 30px;
+            }
+
+            #lightbox .right {
+                right: 30px;
+            }
+
+        .image-group {
+            display: flex;
+            gap: 15px; /* Espace entre les images du groupe */
+            flex-wrap: wrap; /* Pour que ça s'adapte à l'écran si trop long */
+            justify-content: center;
+        }
+
+            .image-group img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s;
+            }
+
+                .image-group img:hover {
+                    transform: scale(1.05);
+                }
+    </style>
+</head>
+<body>
+
+    <h2>Galerie d'images</h2>
+
+    <div class="gallery">
+        <!-- Groupe Donut -->
+        <div class="image-group">
+            <img src="images/obj_donuts.png" alt="Donut rendu" data-group="donut" onclick="openLightbox(this, 0)">
+            <img src="images/WH_01.png" alt="Donut mesh" data-group="donut" onclick="openLightbox(this, 1)">
+            <img src="images/obj_donuts.png" alt="Donut wireframe" data-group="donut" onclick="openLightbox(this, 2)">
+            </div>
+            <!-- Groupe Character -->
+        <div class="image-group">
+            <img src="images/daisy1.jpg" alt="Perso rendu" data-group="character" onclick="openLightbox(this, 0)">
+            <img src="images/daisy2.jpg" alt="Perso mesh" data-group="character" onclick="openLightbox(this, 1)">
+        </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="agrandie">
+            <span class="nav left" onclick="event.stopPropagation(); navigate(-1)">&#10094;</span>
+            <span class="nav right" onclick="event.stopPropagation(); navigate(1)">&#10095;</span>
+        </div>
+
+        <script>
+            let currentGroup = [];
+            let currentIndex = 0;
+
+            function openLightbox(img, index) {
+            const groupName = img.getAttribute('data-group');
+            const images = document.querySelectorAll(`img[data-group="${groupName}"]`);
+
+            currentGroup = Array.from(images);
+            currentIndex = index;
+
+            showImage(currentGroup[currentIndex].src);
+            document.getElementById("lightbox").style.display = "flex";
+            }
+
+            function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+            }
+
+            function navigate(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = currentGroup.length - 1;
+            if (currentIndex >= currentGroup.length) currentIndex = 0;
+
+            showImage(currentGroup[currentIndex].src);
+            }
+
+            function showImage(src) {
+            document.getElementById("lightbox-img").src = src;
+            }
+        </script>
+
+</body>
+</html>

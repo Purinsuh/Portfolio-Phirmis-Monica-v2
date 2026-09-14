@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie interactive</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column; /* Les groupes vont s'empiler verticalement */
+            gap: 30px; /* Espace entre les groupes */
+            align-items: center; /* Centrage horizontal */
+        }
+
+            .gallery img {
+                width: 200px;
+                height: auto;
+                cursor: pointer;
+                border-radius: 8px;
+                transition: transform 0.2s;
+            }
+
+                .gallery img:hover {
+                    transform: scale(1.05);
+                }
+
+        /* Lightbox */
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999;
+            flex-direction: column;
+        }
+
+            #lightbox img {
+                max-width: 90%;
+                max-height: 90%;
+                border-radius: 8px;
+            }
+
+            #lightbox .close {
+                position: absolute;
+                top: 20px;
+                right: 30px;
+                font-size: 40px;
+                color: white;
+                cursor: pointer;
+            }
+
+            #lightbox .nav {
+                position: absolute;
+                top: 50%;
+                font-size: 48px;
+                color: white;
+                cursor: pointer;
+                user-select: none;
+                padding: 10px;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.3);
+                border-radius: 50%;
+            }
+
+            #lightbox .left {
+                left: 30px;
+            }
+
+            #lightbox .right {
+                right: 30px;
+            }
+
+        .image-group {
+            display: flex;
+            gap: 15px; /* Espace entre les images du groupe */
+            flex-wrap: wrap; /* Pour que ça s'adapte à l'écran si trop long */
+            justify-content: left;
+        }
+
+            .image-group img {
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+                transition: transform 0.2s;
+            }
+
+                .image-group img:hover {
+                    transform: scale(1.05);
+                }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+            .lightbox img {
+                max-width: 80%;
+                max-height: 80%;
+                object-fit: contain;
+            }
+
+            .lightbox button {
+                position: absolute;
+                top: 50%;
+                font-size: 2rem;
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                user-select: none;
+            }
+
+        .prev {
+            left: 5%;
+            transform: translateY(-50%);
+        }
+
+        .next {
+            right: 5%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-group">
+        <!-- L'image visible -->
+        <img src="images/obj_donuts.png" alt="Donut" onclick="openGallery(['images/obj_donuts.png', 'images/WH_01.png', 'images/obj_donuts.png'])">
+    </div>
+
+    <!-- Lightbox cachée -->
+    <div id="lightbox" class="lightbox" onclick="closeGallery()">
+        <button class="prev" onclick="prevImage(event)">←</button>
+        <img id="lightbox-img" src="">
+        <button class="next" onclick="nextImage(event)">→</button>
+    </div>
+    <!-- Lightbox cachée -->
+    <div id="lightbox" class="lightbox" onclick="closeGallery()">
+        <button class="prev" onclick="prevImage(event)">←</button>
+        <img id="lightbox-img" src="">
+        <button class="next" onclick="nextImage(event)">→</button>
+    </div>
+
+    <script>
+        let currentGroup = [];
+        let currentIndex = 0;
+
+        function openGallery(images) {
+        currentGroup = images;
+        currentIndex = 0;
+        document.getElementById('lightbox').style.display = 'flex';
+        updateImage();
+        }
+
+        function updateImage() {
+        document.getElementById('lightbox-img').src = currentGroup[currentIndex];
+        }
+
+        function closeGallery() {
+        document.getElementById('lightbox').style.display = 'none';
+        }
+
+        function prevImage(e) {
+        e.stopPropagation();
+        currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+        updateImage();
+        }
+
+        function nextImage(e) {
+        e.stopPropagation();
+        currentIndex = (currentIndex + 1) % currentGroup.length;
+        updateImage();
+        }
+    </script>
+
+</body>
+</html>
